@@ -1,0 +1,25 @@
+{
+    "name": "hexlet/code",
+    "description": "Brain Games is bundle of mini-games with command-line interface",
+    "license": "MIT",
+    "bin": [
+        "bin/brain-games"
+    ],
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ],
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Egor",
+            "email": "glavnegor@yandex.ru"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.15"
+    }
+}
