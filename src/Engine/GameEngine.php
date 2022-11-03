@@ -2,7 +2,6 @@
 
 namespace BrainGamesPhp\Engine\GameEngine;
 
-
 use function cli\line;
 use function cli\prompt;
 
