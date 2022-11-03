@@ -9,3 +9,6 @@ lint:
 
 brain-games:
 	php bin/brain-games.php
+
+brain-even:
+	php bin/brain-even.php

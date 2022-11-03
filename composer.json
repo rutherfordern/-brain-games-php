@@ -3,11 +3,14 @@
     "description": "Brain Games is bundle of mini-games with command-line interface",
     "license": "MIT",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/Games/EvenGame.php",
+            "src/Engine/GameEngine.php"
         ],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
