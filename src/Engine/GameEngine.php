@@ -23,10 +23,10 @@ function runGame($rule, $getLogicGame) {
 
         if ($answerGame !== $answerUser) {
             $result = "'{$answerUser}' is wrong answer. Correct answer was '{$answerGame}'.";
-            line("{$result}\n");
+            line($result);
         } else {
             $result = "Correct!";
-            line("{$result}");
+            line($result);
         }
 
         $counter += 1;

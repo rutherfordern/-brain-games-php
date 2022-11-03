@@ -4,12 +4,14 @@
     "license": "MIT",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "autoload": {
         "files": [
             "src/Cli.php",
             "src/Games/EvenGame.php",
+            "src/Games/CalcGame.php",
             "src/Engine/GameEngine.php"
         ],
         "psr-4": {

@@ -2,8 +2,6 @@
 
 namespace BrainGamesPhp\Games\EvenGame;
 
-use function cli\line;
-use function cli\prompt;
 use function BrainGamesPhp\Engine\GameEngine\runGame;
 
 const RULE = "Answer 'yes' if the number is even, otherwise answer 'no'.";
