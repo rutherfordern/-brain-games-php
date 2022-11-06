@@ -32,7 +32,7 @@ function generateQuestion()
     return $result;
 }
 
-function getGcd($num1, $num2)
+function getGcd(int $num1, int $num2)
 {
     $a = abs($num1);
     $b = abs($num2);
