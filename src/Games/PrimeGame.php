@@ -4,7 +4,7 @@ namespace BrainGamesPhp\Games\PrimeGame;
 
 use function BrainGamesPhp\Engine\GameEngine\runGame;
 
-const RULE = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+const RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function start()
 {
