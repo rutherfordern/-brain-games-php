@@ -1,5 +1,5 @@
 {
-    "name": "hexlet/code",
+    "name": "rutherfordern/brain-games-php",
     "description": "Brain Games is bundle of mini-games with command-line interface",
     "license": "MIT",
     "bin": [
