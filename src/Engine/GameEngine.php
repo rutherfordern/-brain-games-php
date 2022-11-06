@@ -5,9 +5,10 @@ namespace BrainGamesPhp\Engine\GameEngine;
 use function cli\line;
 use function cli\prompt;
 
-function runGame($rule, $getLogicGame) {
+function runGame($rule, $getLogicGame)
+{
     line('Welcome to the Brain Games!');
-  
+
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line($rule);
@@ -18,7 +19,7 @@ function runGame($rule, $getLogicGame) {
     do {
         [$question, $answerGame] = $getLogicGame();
         line("Question: {$question}");
-        
+
         $answerUser = prompt("Your answer");
 
         if ($answerGame !== $answerUser) {

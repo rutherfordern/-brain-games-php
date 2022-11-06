@@ -11,21 +11,25 @@ function start()
     runGame(RULE, fn() => gameLogic());
 }
 
-function gameLogic() {
+function gameLogic()
+{
     $question = rand(4, 40);
     $answer = isPrime($question) ? "yes" : "no";
 
     return [$question, $answer];
 }
 
-function isPrime($num) {
+function isPrime($num)
+{
     $i = 2;
     $limit = sqrt($num);
+
     while ($i <= $limit) {
-      if ($num % $i === 0) {
-        return false;
-      }
-      $i += 1;
+        if ($num % $i === 0) {
+            return false;
+        }
+        $i += 1;
     }
+
     return true;
-  }
+}

@@ -11,7 +11,8 @@ function start()
     runGame(RULE, fn() => gameLogic());
 }
 
-function gameLogic() {
+function gameLogic()
+{
     $question = generateQuestion();
 
     $expressionArray = explode(" ", $question);
@@ -22,10 +23,11 @@ function gameLogic() {
     return [$question, (string) $answer];
 }
 
-function generateQuestion() {
+function generateQuestion()
+{
     $x = rand(1, 50);
     $y = rand(1, 50);
-    
+
     $result = "{$x} {$y}";
     return $result;
 }
@@ -34,17 +36,22 @@ function getGcd($num1, $num2)
 {
     $a = abs($num1);
     $b = abs($num2);
-  
+
     if ($b > $a) {
-      $temp = $a;
-      $a = $b;
-      $b = $temp;
+        $temp = $a;
+        $a = $b;
+        $b = $temp;
     }
-  
+
     while (true) {
-      if ($b === 0) return $a;
-      $a %= $b;
-      if ($a === 0) return $b;
-      $b %= $a;
+        if ($b === 0) {
+            return $a;
+        }
+        $a %= $b;
+
+        if ($a === 0) {
+            return $b;
+        }
+        $b %= $a;
     }
 }

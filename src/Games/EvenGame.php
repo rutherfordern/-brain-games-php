@@ -11,7 +11,8 @@ function start()
     runGame(RULE, fn() => gameLogic());
 }
 
-function gameLogic() {
+function gameLogic()
+{
     $question = rand(1, 100);
     $answer = isEven($question) ? "yes" : "no";
 
@@ -22,4 +23,3 @@ function isEven(int $num): bool
 {
     return $num % 2 === 0;
 }
-

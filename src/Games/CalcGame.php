@@ -11,7 +11,8 @@ function start()
     runGame(RULE, fn() => gameLogic());
 }
 
-function gameLogic() {
+function gameLogic()
+{
     $question = generateQuestion();
 
     $expressionArray = explode(" ", $question);
@@ -31,18 +32,19 @@ function gameLogic() {
             break;
         default:
             $answer = "Неверный оператор";
-      }
+    }
 
     return [$question, (string) $answer];
 }
 
-function generateQuestion() {
+function generateQuestion()
+{
     $x = rand(100, 600);
     $y = rand(1, 20);
-    
+
     $operators = ['+', '-', '*'];
     $operation = $operators[rand(0, 2)];
-    
+
     $result = "{$x} {$operation} {$y}";
     return $result;
 }
