@@ -19,7 +19,7 @@ function gameLogic()
     return [$question, $answer];
 }
 
-function isPrime($num)
+function isPrime(int $num)
 {
     $i = 2;
     $limit = sqrt($num);

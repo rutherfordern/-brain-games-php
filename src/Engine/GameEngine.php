@@ -5,7 +5,7 @@ namespace BrainGamesPhp\Engine\GameEngine;
 use function cli\line;
 use function cli\prompt;
 
-function runGame($rule, $getLogicGame)
+function runGame(string $rule, callable $getLogicGame)
 {
     line('Welcome to the Brain Games!');
 
